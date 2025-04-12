@@ -1,49 +1,29 @@
-# Dynamic Report Generator
+# 📊 SDP Company Analysis AI-Based Platform
 
-A web application for generating dynamic reports with a React/TypeScript frontend and a Python FastAPI backend.
+An intelligent, end-to-end platform for generating business insights and reports using AI. The system leverages advanced models to process, analyze, and present dynamic business data across sales, marketing, and financial domains.
 
-## Requirements
+---
 
-You will need API Keys for [OpenAI](https://openai.com/), [Groq](https://groq.com/), [Anthropic](https://www.anthropic.com/), and [ConvertAPI](https://www.convertapi.com/).
+## 🚀 Overview
 
+**SDP Company Analysis AI-Based Platform** is a full-stack application designed to streamline report generation. By integrating multiple AI providers and document templating, the system produces high-quality, editable business reports—automatically.
 
-!IMPORTANT!
+---
 
-DocxTemplater, which is the JS-library for generating docx files, is a freemium library. 
-The chart-module used in page 5 is only available in the **paid version**, and has been commented out in this project
+## 🧠 Key Capabilities
 
-## Project Structure
+- ✅ **AI-Generated Reports**: Uses OpenAI, Groq, and Anthropic for generating tailored business insights.
+- 📄 **DOCX & PDF Export**: Generates beautifully formatted documents from structured content.
+- 📊 **Dynamic Content**: Generates report sections like executive summaries, charts, and KPIs in real time.
+- ⚙️ **Template-Based Design**: Supports pre-configured templates with dynamic placeholders.
+- 🌐 **Full-Stack Architecture**: Built using React (Frontend) and FastAPI (Backend).
 
-- `/frontend`: React/TypeScript frontend
-- `/backend`: Python FastAPI backend
+---
 
-## Features
+## 📁 Project Structure
 
-- Retrieves and generates dynamic content in the backend
-- Previews and renders content into document templates in the frontend
-- Real-time report generation and preview
-
-## Getting Started
-
-Both the frontend and backend need to be running for the application to work.
-
-### Frontend
-
-1. Navigate to the `/frontend` directory
-2. Install dependencies: `npm install`
-3. Fill in API-credentials in `sample.env`, and rename it to `.env`
-4. Start the react app: `npm start`
-
-### Backend
-
-1. Navigate to the `/backend` directory
-2. Create a poetry virtual environment: `poetry install`
-3. Fill in API-credentials in `sample.env`, and rename it to `.env`
-4. Activate the virtual environment: `poetry shell`
-5. Start the FastAPI server: `uvicorn app:app --reload`
-
-The document templates are located in `frontend/public/temp`
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+```plaintext
+sdp-analysis-platform/
+├── frontend/       # React + TypeScript client
+├── backend/        # FastAPI + Python server
+├── public/temp/    # Document templates
